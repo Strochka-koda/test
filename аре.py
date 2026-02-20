@@ -60,16 +60,17 @@ class WorkingStudent(Employer, Student):
         return self.salary + self.scholarship
 
 
-# Демонстрация работы
+
 bob = Employer("Bob", 2500)
 bob.go_to_work()
 bob.display_inf()
-print(f"Salary: {bob.salary}")          # 2500
+print(f"Salary: {bob.salary}")         
 
 john = Student("John", 1000)
 john.go_to_lecture()
 john.display_inf()
-print(f"Scholarship: {john.scholarship}")  # 1000
+print(f"Scholarship: {john.scholarship}") 
 
 oswald = WorkingStudent("Oswald", 3500, 500)
+
 oswald.all_activities()
